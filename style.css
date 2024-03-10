@@ -189,3 +189,17 @@ h3{
 .hide{
     display: none;
 }
+
+@media screen and (max-width: 420px) {
+    .actions {
+        padding: 10px 5px 10px 5px; /* Mengubah lebar container untuk layar yang lebih kecil */
+    }
+    /* Anda dapat menambahkan gaya lain sesuai kebutuhan */
+}
+
+@media screen and (max-width: 990px) {
+    .transaction-control {
+        gap: 30px; /* Mengubah lebar container untuk layar yang lebih kecil */
+    }
+    /* Anda dapat menambahkan gaya lain sesuai kebutuhan */
+}
