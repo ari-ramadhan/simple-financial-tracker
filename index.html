@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFIT!</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <section class="heading">
+                    <p class="title">Personal Financial Tracker</p>
+                    <p class="subtitle">Aplikasi super simpel untuk mencatat dan mengecek penggunaan uang anda</p>
+                </section>
+
+                <section class="transaction-control">
+                    <div class="actions">
+                        <h3>Tambah Transaksi</h3>
+                        <form class="add">
+                            <input type="text" name="source" placeholder="Sumber" autocomplete="off">
+                            <input type="number" name="amount" placeholder="Jumlah" autocomplete="off">
+                            <input type="submit" value="Tambahkan Transaksi">
+                            <p style="margin: 10px; font-size: smaller; font-style: italic; color: red; letter-spacing: -0.4px;">*Note : Beri nilai minus pada kotak jumlah untuk menambah transaksi pengeluaran</p>
+                        </form>
+                    </div>
+                    <div class="stats">
+                        <h3>Statistik</h3>
+                        <p class="balance">
+                            Saldo: $<span id="balance"></span>
+                        </p>
+                        <p class="income">
+                            Pemasukan: $<span id="income"></span>
+                        </p>
+                        <p class="expense">
+                            Pengeluaran: $<span id="expense"></span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="transaction-history">
+                    <h3>Catatan Transaksi</h3>
+                    <div class="records">
+                        <div class="income">
+                            <h3>Pemasukan</h3>
+                            <ul class="income-list">
+
+                            </ul>
+                        </div>
+                        <div class="expense">
+                            <h3>Pengeluaran</h3>
+                            <ul class="expense-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="empty hide" style="margin: 10px; text-align: -webkit-center;">Daftar transaksi yang telah anda inputkan akan tersedia disini, coba tambah beberapa </p>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
